@@ -3,7 +3,7 @@ from input import data
 
 def sonar(array):
     counter = 0
-    for i, _ in enumerate(array):
+    for i in range(len(array)):
         if i == 0:
             continue
         if (array[i] > array[i-1]):
