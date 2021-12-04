@@ -58,6 +58,7 @@ with open("input") as infile:
     numbers = [int(n) for n in infile.readline().rstrip('\n').split(',')]
     input = infile.readlines()
     for line in input:
+        # new line, create a Board
         if line == '\n':
             board = Board()
             bingo.append(board)
